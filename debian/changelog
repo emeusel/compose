@@ -1,3 +1,9 @@
+docker-compose (1.11.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Erik Meusel <em.opensource@gmail.com>  Sun, 19 Mar 2017 20:22:44 +0100
+
 docker-compose (1.8.0-2) unstable; urgency=medium
 
   * Also Bump runtime dependencies of python-docker and python-dockerpty
