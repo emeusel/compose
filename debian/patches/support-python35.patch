@@ -1,0 +1,11 @@
+Index: docker-compose/setup.py
+===================================================================
+--- docker-compose.orig/setup.py
++++ docker-compose/setup.py
+@@ -98,5 +98,6 @@ setup(
+         'Programming Language :: Python :: 2.7',
+         'Programming Language :: Python :: 3',
+         'Programming Language :: Python :: 3.4',
++        'Programming Language :: Python :: 3.5',
+     ],
+ )
