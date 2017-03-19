@@ -1,0 +1,34 @@
+Source: docker-compose
+Maintainer: Felipe Sateler <fsateler@debian.org>
+Section: admin
+Priority: optional
+Build-Depends:
+ debhelper (>= 10),
+ python3 (>= 3.5~),
+ dh-python,
+ python3-cached-property (>= 1.2.0),
+ python3-docker (>= 2.1.0),
+ python3-dockerpty (>= 0.4.1),
+ python3-docopt (>= 0.6.1),
+ python3-yaml (>= 3.11),
+ python3-requests (>= 2.11.1),
+ python3-six (>= 1.10.0),
+ python3-texttable (>= 0.8.4),
+ python3-websocket (>= 0.32.0),
+ python3-mock (>= 1.0.1),
+ python3-nose,
+ python3-flake8,
+Standards-Version: 3.9.6
+X-Python-Version: >= 3.5~
+Homepage: http://docs.docker.com/compose/
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/docker-compose.git
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/docker-compose.git/
+
+Package: docker-compose
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Recommends: docker.io (>= 1.9.0)
+Description: Punctual, lightweight development environments using Docker
+ docker-compose is a service management software built on top of docker. Define
+ your services and their relationships in a simple YAML file, and let compose
+ handle the rest.
